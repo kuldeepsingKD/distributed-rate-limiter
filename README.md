@@ -9,8 +9,7 @@
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.java.net/projects/jdk/21/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.11-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![Redis](https://img.shields.io/badge/Redis-8.x-red.svg)](https://redis.io/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
-[![Build Status](https://github.com/uppnrise/distributed-rate-limiter/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/uppnrise/distributed-rate-limiter/actions)
+[![Build Status](https://github.com/kuldeepsingKD/distributed-rate-limiter/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/kuldeepsingKD/distributed-rate-limiter/actions)
 
 [📦 Download](#-installation) • [📖 Documentation](#-documentation) • [🚀 Quick Start](#-quick-start) • [💡 Examples](#-examples)
 
@@ -189,10 +188,10 @@ Educational page for understanding rate limiting algorithms:
 
 ```bash
 # Download the latest release
-wget https://github.com/uppnrise/distributed-rate-limiter/releases/download/v1.3.2/distributed-rate-limiter-1.3.2.jar
+wget https://github.com/kuldeepsingKD/distributed-rate-limiter/releases/download/v1.3.2/distributed-rate-limiter-1.3.2.jar
 
 # Verify checksum (optional)
-wget https://github.com/uppnrise/distributed-rate-limiter/releases/download/v1.3.2/distributed-rate-limiter-1.3.2.jar.sha256
+wget https://github.com/kuldeepsingKD/distributed-rate-limiter/releases/download/v1.3.2/distributed-rate-limiter-1.3.2.jar.sha256
 sha256sum -c distributed-rate-limiter-1.3.2.jar.sha256
 ```
 
@@ -200,17 +199,17 @@ sha256sum -c distributed-rate-limiter-1.3.2.jar.sha256
 
 ```bash
 # Run the image directly
-docker run -p 8080:8080 ghcr.io/uppnrise/distributed-rate-limiter:1.3.2
+docker run -p 8080:8080 ghcr.io/kuldeepsingKD/distributed-rate-limiter:1.3.2
 
 # Or use the compose file from the repository
-curl -O https://raw.githubusercontent.com/uppnrise/distributed-rate-limiter/v1.3.2/docker-compose.yml
+curl -O https://raw.githubusercontent.com/kuldeepsingKD/distributed-rate-limiter/v1.3.2/docker-compose.yml
 docker compose up -d
 ```
 
 ### Option 3: Build from Source
 
 ```bash
-git clone https://github.com/uppnrise/distributed-rate-limiter.git
+git clone https://github.com/kuldeepsingKD/distributed-rate-limiter.git
 cd distributed-rate-limiter
 ./mvnw clean install
 java -jar target/distributed-rate-limiter-1.3.2.jar
@@ -823,7 +822,7 @@ ratelimiter.security.ip.blacklist=192.168.1.100
 version: '3.8'
 services:
   rate-limiter:
-    image: ghcr.io/uppnrise/distributed-rate-limiter:1.3.2
+    image: ghcr.io/kuldeepsingKD/distributed-rate-limiter:1.3.2
     ports:
       - "8080:8080"
     environment:
@@ -858,7 +857,7 @@ spec:
     spec:
       containers:
       - name: rate-limiter
-        image: ghcr.io/uppnrise/distributed-rate-limiter:1.3.2
+        image: ghcr.io/kuldeepsingKD/distributed-rate-limiter:1.3.2
         ports:
         - containerPort: 8080
         env:
@@ -968,7 +967,7 @@ The project includes comprehensive integration tests using Testcontainers:
 
 ```bash
 # Clone the repository
-git clone https://github.com/uppnrise/distributed-rate-limiter.git
+git clone https://github.com/kuldeepsingKD/distributed-rate-limiter.git
 cd distributed-rate-limiter
 
 # Install Java 21 (required)
@@ -990,18 +989,7 @@ java -version  # Should show OpenJDK 21.x.x
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Update documentation
-6. Submit a pull request
-
----
+ 
 
 ## 📚 Resources
 
@@ -1019,11 +1007,6 @@ This project was developed with assistance from **GitHub Copilot**, which helped
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -1037,7 +1020,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 🆘 Support
 
 - **Documentation**: Check the [docs/](docs/) directory for comprehensive guides
-- **Issues**: Report bugs and request features via [GitHub Issues](https://github.com/uppnrise/distributed-rate-limiter/issues)
+- **Issues**: Report bugs and request features via [GitHub Issues](https://github.com/kuldeepsingKD/distributed-rate-limiter/issues)
 - **Examples**: See [docs/examples/](docs/examples/) for integration examples
 
 ---
@@ -1046,6 +1029,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **Built with ❤️ for the developer community**
 
-[⭐ Star this project](https://github.com/uppnrise/distributed-rate-limiter) if you find it useful!
+[⭐ Star this project](https://github.com/kuldeepsingKD/distributed-rate-limiter) if you find it useful!
 
 </div>
